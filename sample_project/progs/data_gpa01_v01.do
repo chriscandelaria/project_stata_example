@@ -23,8 +23,8 @@ glo dofile "`r(dofile)'"
 *
 * Load the data
 *
-project, uses("../data/raw/data_gpa_raw.dta")
-use "../data/raw/data_gpa_raw.dta"
+project, original("../data/raw/download_data_gpa_raw.dta")
+use "../data/raw/download_data_gpa_raw.dta"
 *
 * Create some variables
 *

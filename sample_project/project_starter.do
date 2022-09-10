@@ -75,14 +75,23 @@ project, do("progs/!add_user-written_program_dependencies.do")
 ***** PREPARE DATA
 *******************
 
+***
+*** PART 1: Download data files and declare them as original files
+***         Once downloaded, you may wish to comment out the "copy" or "import" 
+***         within the .do file. This ensures there is a record of how the data 
+***         were obtained.
+***
 *
-* Download a raw data set from Jeff Wooldridge's Econometric Analysis of 
+* Download a data set, gpa.dta, from Jeff Wooldridge's Econometric Analysis of 
 * Cross Section and Panel Data book via the Stata website
-* Typically, 
 *
-project, do("progs/data_gpa_raw.do")
+project, do("progs/download_data_gpa_raw.do")
+***
+*** PART 2: Clean the data sets
+***
 *
 * Open the GPA data set and create some new variables
+* Note: 
 *
 project, do("progs/data_gpa01_v01.do")
 *

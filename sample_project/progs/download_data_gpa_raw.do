@@ -27,8 +27,8 @@ glo dofile "`r(dofile)'"
 copy "http://www.stata.com/data/jwooldridge/eacsap/gpa.dta" ///
     "../data/raw/${dofile}.dta", replace
 *
-* Declare data set
+* Declare data set as an original file
 *
-project, creates("../data/raw/${dofile}.dta")
+project, original("../data/raw/${dofile}.dta")
 
 * end file
